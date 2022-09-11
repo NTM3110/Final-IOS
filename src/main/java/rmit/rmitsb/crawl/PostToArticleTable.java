@@ -1,5 +1,7 @@
 package rmit.rmitsb.crawl;
 
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
 import rmit.rmitsb.model.ArticleModel;
 
 import java.io.IOException;
@@ -8,6 +10,7 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class PostToArticleTable {
     private final String url = "jdbc:postgresql://localhost:5432/ios";
     private final String user = "postgres";
@@ -21,6 +24,8 @@ public class PostToArticleTable {
     public Connection connect() throws SQLException {
         return DriverManager.getConnection(url, user, password);
     }
+
+    @Scheduled(fixedRate = 1000 * 60 * 5)
     public long insertArticle(ArticleModel article) {
         String SQL = "INSERT INTO article_model(title,img_src) "
                 + "VALUES(?,?)";
