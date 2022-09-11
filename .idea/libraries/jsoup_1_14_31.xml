@@ -1,8 +1,6 @@
 <component name="libraryTable">
   <library name="jsoup-1.14.31">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/src/main/java/rmit/rmitsb/jsoup-1.14.3.jar!/" />
-    </CLASSES>
+    <CLASSES />
     <JAVADOC />
     <SOURCES />
   </library>
