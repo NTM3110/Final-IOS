@@ -2,35 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05d7d98e-4dce-4ddf-9fd8-e6397a2a1bce" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/Final-BackEnd.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jsoup_1_14_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/crawl/CrawlModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/crawl/CrawlModelManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/crawl/PostToArticleTable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/crawl/TextManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/jsoup-1.14.3.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/RmitsbApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/RmitsbApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/contrller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/controller/HelloController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/contrller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/controller/ArticleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/model/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/model/ArticleModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/repository/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/repository/ArticleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/service/ArticleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/service/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/service/ArticleServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/schema.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/contrller/HelloController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/contrller/StudentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/model/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/repository/StudentRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/service/StudentServiceImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/schema.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/schema.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,14 +46,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1636510768321" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Sem2 2021/Objected Programming Subject/notfromusnews/src/jsoup-1.14.3.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/rmit/rmitsb/jsoup-1.14.3.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\RMIT\Sem 2 2022\IOS\Final-BackEnd\src\main\java\rmit\rmitsb" />
       <recent name="D:\Documents\RMIT\Sem 2 2022\IOS\Final-BackEnd\src\main\java\rmit\rmitsb\crawl" />
     </key>
   </component>
@@ -143,11 +117,25 @@
       <workItem from="1662845840087" duration="248000" />
       <workItem from="1662846310796" duration="2031000" />
       <workItem from="1662848368964" duration="339000" />
+      <workItem from="1662865710432" duration="486000" />
+      <workItem from="1662879123375" duration="2403000" />
     </task>
+    <task id="LOCAL-00001" summary="init">
+      <created>1662865907376</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662865907376</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init" />
+    <option name="LAST_COMMIT_MESSAGE" value="init" />
   </component>
   <component name="WindowStateProjectService">
     <state x="485" y="67" key="#RmitsbApplication" timestamp="1662848456750">
@@ -162,10 +150,10 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="686" y="3" key="CommitChangelistDialog2/0.0.1536.816@0.0.1536.816" timestamp="1662865906574" />
-    <state x="473" y="150" key="FileChooserDialogImpl" timestamp="1662848254087">
+    <state x="473" y="150" key="FileChooserDialogImpl" timestamp="1662886699551">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="473" y="150" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1662848254087" />
+    <state x="473" y="150" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1662886699551" />
     <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1662848708995">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
@@ -182,14 +170,18 @@
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1662848708995" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1662848257679">
+    <state x="249" y="0" key="SettingsEditor" timestamp="1662886702115">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1662848257679" />
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1662886702115" />
     <state x="722" y="141" key="Vcs.Push.Dialog.v2" timestamp="1662865923340">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="722" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1662865923340" />
+    <state x="848" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1662879183616">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="848" y="232" key="com.intellij.ide.util.TipDialog/0.0.1536.816@0.0.1536.816" timestamp="1662879183616" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
