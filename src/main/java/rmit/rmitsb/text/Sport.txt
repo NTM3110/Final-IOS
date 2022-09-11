@@ -1,0 +1,10 @@
+Vnexpress,Sport,https://vnexpress.net/rss/the-thao.rss
+TuoiTre,Sport,https://tuoitre.vn/rss/the-thao.rss
+Thanhnien,Sport,https://thanhnien.vn/the-thao/bong-da-quoc-te.rss
+Thanhnien,Sport,https://thanhnien.vn/the-thao/bong-da-viet-nam.rss
+Thanhnien,Sport,https://thanhnien.vn/the-thao/binh-luan.rss
+Thanhnien,Sport,https://thanhnien.vn/the-thao/hau-truong.rss
+Thanhnien,Sport,https://thanhnien.vn/the-thao/quan-vot.rss
+Thanhnien,Sport,https://thanhnien.vn/the-thao/tin-chuyen-nhuong.rss
+Nhandan,Sport,https://en.nhandan.vn/rss/sports.html
+Zing,Sport,https://zingnews.vn/sitemap/cate/the-thao.xml

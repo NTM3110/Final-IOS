@@ -1,0 +1,5 @@
+Vnexpress,New,https://vnexpress.net/rss/tin-moi-nhat.rss
+TuoiTre,New,https://tuoitre.vn/rss/tin-moi-nhat.rss
+Thanhnien,New,https://thanhnien.vn/rss/tin-moi-nhat.rss
+Zing,New,https://zingnews.vn/sitemap/cate/thoi-su.xml
+Nhandan,New,https://en.nhandan.vn/rss/business.html

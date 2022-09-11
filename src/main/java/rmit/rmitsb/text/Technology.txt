@@ -1,0 +1,4 @@
+Vnexpress,Technology,https://vnexpress.net/rss/startup.rss
+TuoiTre,Technology,https://tuoitre.vn/rss/nhip-song-so.rss
+Thanhnien,Technology,https://thanhnien.vn/rss/cong-nghe.rss
+Nhandan,Technology,https://en.nhandan.vn/rss/scitech.html

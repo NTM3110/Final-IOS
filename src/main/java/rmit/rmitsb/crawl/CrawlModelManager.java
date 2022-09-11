@@ -17,12 +17,29 @@ import rmit.rmitsb.model.ArticleModel;
 
 import java.io.File;
 import java.io.IOException;
+import java.io.InputStream;
+import java.net.URL;
+import java.nio.file.FileSystems;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class CrawlModelManager implements CrawlModel {
     private int bound = 50;
+//    enum category {
+//        BUSINESS,
+//        COVID19,
+//        ENTERTAINMENT,
+//        NEWEST,
+//        POLITIC,
+//        PUBLISHER,
+//        SPORT,
+//        TECHNOLOGY,
+//        WORLD
+//    }
+//    private final String[][] source = new String[9][20]{
+//        {"https://vnexpress.net/rss/kinh-doanh.rss", "https://tuoitre.vn/rss/kinh-doanh.rss",
+//    }
 
     @Override
     // This functions take in URL of an article to return cleaned HTML
@@ -209,11 +226,9 @@ public class CrawlModelManager implements CrawlModel {
         String dir = " @CrawlModelManager/Crawl1(file)";
         List<ArticleModel> articles = new ArrayList<>();
 
-        // Parsing a CSV file into Scanner class constructor
         Scanner sc;
-        File path = new File("D:\\Documents\\RMIT\\Sem1 2022\\Enterprise App Development\\FinalTest\\BA\\TestArticle\\src\\text\\"+file+".txt");
+        File path = new File("src/main/java/rmit/rmitsb/text/"+file+".txt");
         sc = new Scanner(path);
-
         // Process all URLs in text file
         while (sc.hasNext()) {
             Document doc;

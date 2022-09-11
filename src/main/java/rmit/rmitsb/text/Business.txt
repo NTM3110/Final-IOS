@@ -1,0 +1,4 @@
+Vnexpress,Business,https://vnexpress.net/rss/kinh-doanh.rss
+TuoiTre,Business,https://tuoitre.vn/rss/kinh-doanh.rss
+Thanhnien,Business,https://thanhnien.vn/rss/tai-chinh-kinh-doanh.rss
+Nhandan,Business,https://en.nhandan.vn/rss/business.html
