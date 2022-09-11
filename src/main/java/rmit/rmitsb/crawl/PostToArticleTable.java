@@ -14,7 +14,7 @@ import java.util.List;
 public class PostToArticleTable {
     private final String url = "jdbc:postgresql://localhost:5432/ios";
     private final String user = "postgres";
-    private final String password = "Nhatuthien3110";
+    private final String password = "minhbeee123";
 
     /**
      * Connect to the PostgreSQL database
@@ -25,7 +25,6 @@ public class PostToArticleTable {
         return DriverManager.getConnection(url, user, password);
     }
 
-    @Scheduled(fixedRate = 1000 * 60 * 5)
     public long insertArticle(ArticleModel article) {
         String SQL = "INSERT INTO article_model(title,img_src) "
                 + "VALUES(?,?)";
@@ -56,6 +55,18 @@ public class PostToArticleTable {
             System.out.println("Connect: "+ ex.getMessage());
         }
         return id;
+    }
+
+    @Scheduled(fixedRate = 1000 * 60 * 5)
+    public void task() throws IOException, ParseException{
+        CrawlModelManager crawlModelManager  = new CrawlModelManager() ;
+        List<ArticleModel> articleModel = new ArrayList<>();
+        articleModel = crawlModelManager.crawlRSS("Entertainment");
+        System.out.println(articleModel.get(0).getTitle());
+        PostToArticleTable  pta = new PostToArticleTable();
+        for (int i = 0 ;i< articleModel.size();i++) {
+            pta.insertArticle(articleModel.get(i));
+        }
     }
 
     public static void main(String[] args) throws IOException, ParseException {
