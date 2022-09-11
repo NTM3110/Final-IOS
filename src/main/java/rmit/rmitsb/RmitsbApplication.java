@@ -9,5 +9,4 @@ public class RmitsbApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RmitsbApplication.class, args);
 	}
-
 }

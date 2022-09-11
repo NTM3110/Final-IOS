@@ -1,6 +1,5 @@
-package rmit.rmitsb.contrller;
+package rmit.rmitsb.controller;
 
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
