@@ -48,7 +48,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    @Scheduled(fixedRate = 60 * 10 * 1000)
+    @Scheduled(fixedRate = 60 * 30 * 1000)
     public void deleteAll() {
         this.articleRepository.deleteAll();
     }
