@@ -1,9 +1,6 @@
 package rmit.rmitsb.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class ArticleModel {
@@ -12,9 +9,20 @@ public class ArticleModel {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
+    @Column
     private String title;
+
+    @Column
     private String imgSrc;
+
+    @Column
     private String directUrl;
+
+    @Column
+    private String category;
+
+    @Column
+    private String content;
 
     public ArticleModel(){
 
@@ -23,6 +31,7 @@ public class ArticleModel {
         this.title = title;
         this.directUrl = directUrl;
     }
+
     public String getDirectUrl() {
         return directUrl;
     }
@@ -44,5 +53,14 @@ public class ArticleModel {
     }
 
     public String getImgSrc(){return imgSrc;}
+
     public String getTitle() { return title; }
+
+    public String getCategory() {return category;}
+
+    public void setCategory(String category) {this.category = category;}
+
+    public String getContent() {return content;}
+
+    public void setContent(String content) {this.content = content;}
 }

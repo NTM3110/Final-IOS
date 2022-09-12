@@ -1,6 +1,7 @@
 package rmit.rmitsb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import rmit.rmitsb.model.ArticleModel;
 import rmit.rmitsb.repository.ArticleRepository;
@@ -19,8 +20,12 @@ public class ArticleServiceImpl implements ArticleService {
         this.articleRepository.save(article);
     }
 
-    public List<ArticleModel> getAllArticles(){
-        return this.articleRepository.findAll();
+    public List<ArticleModel> getAllArticles(String category) {
+        if (category == null) {
+            return this.articleRepository.findAll();
+        }
+
+        return this.articleRepository.findAllByCategory(category);
     }
 
     public ArticleModel getArticle(Long id){
@@ -42,6 +47,9 @@ public class ArticleServiceImpl implements ArticleService {
         return article;
     }
 
-
-
+    @Override
+    @Scheduled(fixedRate = 60 * 10 * 1000)
+    public void deleteAll() {
+        this.articleRepository.deleteAll();
+    }
 }

@@ -26,8 +26,8 @@ public class PostToArticleTable {
     }
 
     public long insertArticle(ArticleModel article) {
-        String SQL = "INSERT INTO article_model(title,img_src) "
-                + "VALUES(?,?)";
+        String SQL = "INSERT INTO article_model(title,img_src,direct_url,category,content) "
+                + "VALUES(?,?,?,?,?)";
 
         long id = 0;
 
@@ -38,6 +38,9 @@ public class PostToArticleTable {
             ArticleModel articleModel = article;
             pstmt.setString(1, article.getTitle());
             pstmt.setString(2, article.getImgSrc());
+            pstmt.setString(3, article.getDirectUrl());
+            pstmt.setString(4, article.getCategory());
+            pstmt.setString(5, article.getContent());
 
             int affectedRows = pstmt.executeUpdate();
             // check the affected rows
@@ -54,18 +57,41 @@ public class PostToArticleTable {
         } catch (SQLException ex) {
             System.out.println("Connect: "+ ex.getMessage());
         }
+
+        System.out.println("Inserted " + id);
         return id;
     }
 
-    @Scheduled(fixedRate = 1000 * 60 * 5)
+    @Scheduled(fixedDelay = 1000 * 60 * 5)
     public void task() throws IOException, ParseException{
+        ArrayList<String> categories = new ArrayList<String>() {
+            {
+                add("Entertainment");
+                add("Covid-19");
+                add("Newest");
+                add("Politic");
+                add("Publisher");
+                add("Sport");
+                add("Technology");
+                add("World");
+            }
+        };
+
         CrawlModelManager crawlModelManager  = new CrawlModelManager() ;
-        List<ArticleModel> articleModel = new ArrayList<>();
-        articleModel = crawlModelManager.crawlRSS("Entertainment");
-        System.out.println(articleModel.get(0).getTitle());
-        PostToArticleTable  pta = new PostToArticleTable();
-        for (int i = 0 ;i< articleModel.size();i++) {
-            pta.insertArticle(articleModel.get(i));
+
+        for (String category: categories) {
+            List<ArticleModel> articleModel = new ArrayList<>();
+            articleModel = crawlModelManager.crawlRSS(category);
+
+            if (articleModel == null) continue;
+
+            System.out.println(articleModel.get(0).getTitle());
+            PostToArticleTable  pta = new PostToArticleTable();
+            System.out.println(articleModel.size());
+
+            for (int i = 0 ;i< articleModel.size();i++) {
+                pta.insertArticle(articleModel.get(i));
+            }
         }
     }
 

@@ -217,6 +217,7 @@ public class CrawlModelManager implements CrawlModel {
 //        else if (provider.contains("Thanhnien")) articleModel.setPublisherImage("https://i.ibb.co/tCzZ1Y0/thanhnien.png");
 //        else if (provider.contains("Nhandan")) articleModel.setPublisherImage("https://i.ibb.co/PC70NVZ/nhandan.png");
 
+        articleModel.setContent(this.crawlArticleContent(articleModel.getDirectUrl()));
         // Add new article
         return articleModel;
     }
@@ -256,8 +257,11 @@ public class CrawlModelManager implements CrawlModel {
                     doc.getElementsByTag("url") : doc.getElementsByTag("item");
             for (Element e : pageContent) {
                 bound = bound - 1;
+                // System.out.println(e);
                 if (bound == 0 || bound % 20 == 0) break;
-                articles.add(setUpArticleModel(e, provider));
+                ArticleModel articleModel = setUpArticleModel(e, provider);
+                articleModel.setCategory(file);
+                articles.add(articleModel);
             }
         }
 

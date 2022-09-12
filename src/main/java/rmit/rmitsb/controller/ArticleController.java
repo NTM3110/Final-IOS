@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.*;
 import rmit.rmitsb.model.ArticleModel;
 import rmit.rmitsb.service.ArticleService;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -14,8 +15,8 @@ public class ArticleController {
     private ArticleService articleService;
 
     @RequestMapping(path = "/articles", method = RequestMethod.GET)
-    public List<ArticleModel> getAllArticles(){
-        return articleService.getAllArticles();
+    public List<ArticleModel> getAllArticles(@RequestParam(value = "category", required = false) String category){
+        return articleService.getAllArticles(category);
     }
 
     @RequestMapping(path = "/articles", method = RequestMethod.POST)
@@ -28,13 +29,36 @@ public class ArticleController {
         articleService.saveArticle(article);
     }
 
-    @RequestMapping(path = "/articles/{id}", method = RequestMethod.DELETE)
+    @RequestMapping (path = "/articles/{id}", method = RequestMethod.DELETE)
     public void deleteArticle(@PathVariable(value = "id") Long id){
         articleService.deleteArticle(id);
+    }
+
+    @RequestMapping (path = "/articles/", method = RequestMethod.DELETE)
+    public void deleteArticles(){
+        articleService.deleteAll();
     }
 
     @RequestMapping(path = "/articles/{id}", method = RequestMethod.GET)
     public ArticleModel getArticle(@PathVariable(value = "id") Long id){
         return articleService.getArticle(id);
     }
+
+    @GetMapping(path = "/categories")
+    public List<String> getCategories(){
+        ArrayList<String> categories = new ArrayList<String>() {
+            {
+                add("Entertainment");
+                add("Covid-19");
+                add("Newest");
+                add("Politic");
+                add("Publisher");
+                add("Sport");
+                add("Technology");
+                add("World");
+            }
+        };
+        return categories;
+    }
+
 }
