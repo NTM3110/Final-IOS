@@ -31,7 +31,10 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public List<ArticleModel> getAllArticles(Pageable pageable, String category) {
-        return this.articleRepository.findAll(pageable).getContent();
+        if (category == null) {
+            return this.articleRepository.findAll(pageable).getContent();
+        }
+        return this.articleRepository.findAllByCategory(pageable, category).getContent();
     }
 
     public ArticleModel getArticle(Long id){

@@ -10,5 +10,6 @@ import java.util.List;
 
 public interface ArticleRepository extends JpaRepository<ArticleModel, Long> {
     List<ArticleModel> findAllByCategory(String category);
+    Page<ArticleModel> findAllByCategory(Pageable pageable, String category);
     Page<ArticleModel> findAll(Pageable pageable);
 }
