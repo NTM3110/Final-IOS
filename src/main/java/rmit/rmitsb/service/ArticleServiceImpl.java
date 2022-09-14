@@ -1,6 +1,7 @@
 package rmit.rmitsb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import rmit.rmitsb.model.ArticleModel;
@@ -26,6 +27,11 @@ public class ArticleServiceImpl implements ArticleService {
         }
 
         return this.articleRepository.findAllByCategory(category);
+    }
+
+    @Override
+    public List<ArticleModel> getAllArticles(Pageable pageable, String category) {
+        return this.articleRepository.findAll(pageable).getContent();
     }
 
     public ArticleModel getArticle(Long id){
