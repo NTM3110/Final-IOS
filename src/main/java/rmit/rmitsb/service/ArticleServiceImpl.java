@@ -1,6 +1,7 @@
 package rmit.rmitsb.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
 import rmit.rmitsb.model.ArticleModel;
@@ -28,6 +29,14 @@ public class ArticleServiceImpl implements ArticleService {
         return this.articleRepository.findAllByCategory(category);
     }
 
+    @Override
+    public List<ArticleModel> getAllArticles(Pageable pageable, String category) {
+        if (category == null) {
+            return this.articleRepository.findAll(pageable).getContent();
+        }
+        return this.articleRepository.findAllByCategory(pageable, category).getContent();
+    }
+
     public ArticleModel getArticle(Long id){
         ArticleModel article = null;
         try {
@@ -48,7 +57,7 @@ public class ArticleServiceImpl implements ArticleService {
     }
 
     @Override
-    @Scheduled(fixedRate = 60 * 30 * 1000)
+//    @Scheduled(fixedRate = 60 * 30 * 1000)
     public void deleteAll() {
         this.articleRepository.deleteAll();
     }

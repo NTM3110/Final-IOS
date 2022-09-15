@@ -1,6 +1,7 @@
 package rmit.rmitsb.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
 import org.springframework.web.bind.annotation.*;
 import rmit.rmitsb.model.ArticleModel;
 import rmit.rmitsb.service.ArticleService;
@@ -15,8 +16,8 @@ public class ArticleController {
     private ArticleService articleService;
 
     @RequestMapping(path = "/articles", method = RequestMethod.GET)
-    public List<ArticleModel> getAllArticles(@RequestParam(value = "category", required = false) String category){
-        return articleService.getAllArticles(category);
+    public List<ArticleModel> getAllArticles(Pageable pageable, @RequestParam(value = "category", required = false) String category){
+        return articleService.getAllArticles(pageable, category);
     }
 
     @RequestMapping(path = "/articles", method = RequestMethod.POST)
