@@ -1,3 +1,1 @@
 TuoiTre,Entertainment,https://tuoitre.vn/rss/giai-tri.rss
-Thanhnien,Entertainment,https://thanhnien.vn/rss/giai-tri.rss
-Nhandan,Entertainment,https://en.nhandan.vn/rss/travel.html

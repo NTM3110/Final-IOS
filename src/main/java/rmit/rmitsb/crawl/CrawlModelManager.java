@@ -12,14 +12,11 @@ import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
-import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.data.util.Pair;
 import rmit.rmitsb.model.ArticleModel;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URL;
-import java.nio.file.FileSystems;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
@@ -44,6 +41,7 @@ public class CrawlModelManager implements CrawlModel {
     @Override
     // This functions take in URL of an article to return cleaned HTML
     public String crawlArticleContent(String url) {
+        //Pair<String,String> pair = new Pair<>("","");
         Document doc;
         String dir = " @CrawlModelManager/crawl";
 
@@ -52,8 +50,9 @@ public class CrawlModelManager implements CrawlModel {
             doc = Jsoup.connect(url).get();
             System.out.println(url + "connection looks find " + dir);
         } catch (IOException e) {
-            System.out.println(" URL not found" + dir);
-            throw new RuntimeException(e);
+            System.out.println(" URL not found" + url);
+            //throw new RuntimeException(e);
+            return "";
         }
 
         // Remove unnecessary tags
@@ -203,12 +202,12 @@ public class CrawlModelManager implements CrawlModel {
         long seconds = ms / 1000;
         long minutes = seconds / 60;
         long hours = seconds / (60 * 60);
-//        if (minutes <= 1) articleModel.setTime(minutes + " minute ago");
-//        else if (hours < 1) articleModel.setTime(minutes + " minutes ago");
-//        else if (hours == 1) articleModel.setTime(hours + " hour ago");
-//        else if (hours <= 48) articleModel.setTime(hours + " hours ago");
-//        else articleModel.setTime((hours / 24) + " days ago");
-//        articleModel.setT(seconds);
+        if (minutes <= 1) articleModel.setTime(seconds + " seconds ago");
+        else if (hours < 1) articleModel.setTime(minutes + " minutes ago");
+        else if (hours == 1) articleModel.setTime(hours + " hour ago");
+        else if (hours <= 48) articleModel.setTime(hours + " hours ago");
+        else articleModel.setTime((hours / 24) + " days ago");
+       // articleModel.setTime(seconds + "seconds ago");
 
 //        // Logo for different papers
 //        if (provider.contains("Vnexpress")) articleModel.setPublisherImage("https://i.ibb.co/vmNV6Zv/vnexpress.png");
@@ -217,8 +216,24 @@ public class CrawlModelManager implements CrawlModel {
 //        else if (provider.contains("Thanhnien")) articleModel.setPublisherImage("https://i.ibb.co/tCzZ1Y0/thanhnien.png");
 //        else if (provider.contains("Nhandan")) articleModel.setPublisherImage("https://i.ibb.co/PC70NVZ/nhandan.png");
 
-        articleModel.setContent(this.crawlArticleContent(articleModel.getDirectUrl()));
-        // Add new article
+        String html = this.crawlArticleContent(articleModel.getDirectUrl());
+        articleModel.setContent(html);
+        if (html.length() == 0){
+            articleModel.setAuthor("");
+            return articleModel;
+        }
+        else {
+            Document doc = Jsoup.parse(html);
+            Elements elements = doc.select("i");
+            if (elements.size() > 0) {
+                String author = elements.last().text();
+                articleModel.setAuthor(author);
+            }
+            else{
+                
+            }
+            // Add new article
+        }
         return articleModel;
     }
 

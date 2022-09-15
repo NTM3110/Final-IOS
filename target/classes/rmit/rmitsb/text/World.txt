@@ -1,0 +1,4 @@
+Vnexpress,World,https://vnexpress.net/rss/the-gioi.rss
+TuoiTre,World,https://tuoitre.vn/rss/the-gioi.rss
+Thanhnien,World,https://thanhnien.vn/rss/the-gioi.rss
+Nhandan,World,https://en.nhandan.vn/rss/world.html

@@ -3,8 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="05d7d98e-4dce-4ddf-9fd8-e6397a2a1bce" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/crawl/CrawlModelManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/crawl/CrawlModelManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/crawl/PostToArticleTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/crawl/PostToArticleTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/model/ArticleModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/model/ArticleModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/text/Entertainment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/rmitsb/text/Entertainment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/RmitsbApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rmit/rmitsb/RmitsbApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/controller/ArticleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rmit/rmitsb/controller/ArticleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/crawl/CrawlModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rmit/rmitsb/crawl/CrawlModel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/crawl/CrawlModelManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rmit/rmitsb/crawl/CrawlModelManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/crawl/PostToArticleTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rmit/rmitsb/crawl/PostToArticleTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/model/ArticleModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rmit/rmitsb/model/ArticleModel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/repository/ArticleRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rmit/rmitsb/repository/ArticleRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/service/ArticleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rmit/rmitsb/service/ArticleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/rmit/rmitsb/service/ArticleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/rmit/rmitsb/service/ArticleServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +45,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="ProjectId" id="27UzNMTyYlOiJVr6WhPvzqwC16N" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -47,19 +59,25 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1636510768321" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/rmit/rmitsb/jsoup-1.14.3.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Sem3 2021/Data Structure and Algorithm/YayLearning" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Documents\RMIT\Sem 2 2022\IOS\Final-BackEnd\src\main\java\rmit\rmitsb" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Documents\RMIT\Sem 2 2022\IOS\Final-BackEnd\src\main\java\rmit\rmitsb\crawl" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="rmit.rmitsb" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Documents\RMIT\Sem 2 2022\IOS\Final-BackEnd\src\main\java\rmit\rmitsb\crawl" />
+      <recent name="D:\Documents\RMIT\Sem 2 2022\IOS\Final-BackEnd\src\main\java\rmit\rmitsb" />
+    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.RmitsbApplication">
+  <component name="RunManager" selected="Application.PostToArticleTable">
     <configuration name="PostToArticleTable" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="rmit.rmitsb.crawl.PostToArticleTable" />
       <module name="Final-BackEnd" />
@@ -119,7 +137,15 @@
       <workItem from="1662846310796" duration="2031000" />
       <workItem from="1662848368964" duration="339000" />
       <workItem from="1662865710432" duration="486000" />
-      <workItem from="1662879123375" duration="2972000" />
+      <workItem from="1662879123375" duration="4637000" />
+      <workItem from="1662918074016" duration="3481000" />
+      <workItem from="1663000176436" duration="1013000" />
+      <workItem from="1663048127061" duration="625000" />
+      <workItem from="1663051334493" duration="2307000" />
+      <workItem from="1663128756462" duration="358000" />
+      <workItem from="1663175146814" duration="2000" />
+      <workItem from="1663227651414" duration="2475000" />
+      <workItem from="1663261663922" duration="6296000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1662865907376</created>
@@ -128,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662865907376</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add relative path">
+      <created>1662921566641</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662921566641</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,60 +169,77 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="add relative path" />
+    <option name="LAST_COMMIT_MESSAGE" value="add relative path" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="485" y="67" key="#RmitsbApplication" timestamp="1662887470218">
+    <state x="485" y="67" key="#RmitsbApplication" timestamp="1663266871103">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="485" y="67" key="#RmitsbApplication/0.0.1536.816@0.0.1536.816" timestamp="1662887470218" />
+    <state x="485" y="67" key="#RmitsbApplication/0.0.1536.816@0.0.1536.816" timestamp="1663266871103" />
+    <state x="385" y="334" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1662920181635">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="385" y="334" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.816@0.0.1536.816" timestamp="1662920181635" />
+    <state x="566" y="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1662920183194">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="566" y="289" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1536.816@0.0.1536.816" timestamp="1662920183194" />
     <state x="770" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1662846428478">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="770" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.816@0.0.1536.816" timestamp="1662846428478" />
-    <state x="686" y="3" key="CommitChangelistDialog2" timestamp="1662865906574">
+    <state x="686" y="3" key="CommitChangelistDialog2" timestamp="1662921565927">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="686" y="3" key="CommitChangelistDialog2/0.0.1536.816@0.0.1536.816" timestamp="1662865906574" />
-    <state x="473" y="150" key="FileChooserDialogImpl" timestamp="1662886699551">
+    <state x="686" y="3" key="CommitChangelistDialog2/0.0.1536.816@0.0.1536.816" timestamp="1662921565927" />
+    <state x="294" y="64" width="1228" height="680" key="DiffContextDialog" timestamp="1663048150582">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="473" y="150" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1662886699551" />
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1662887472425">
+    <state x="294" y="64" width="1228" height="680" key="DiffContextDialog/0.0.1536.816@0.0.1536.816" timestamp="1663048150582" />
+    <state x="473" y="150" key="FileChooserDialogImpl" timestamp="1662920988322">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1662887472425" />
-    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1662887472425">
+    <state x="473" y="150" key="FileChooserDialogImpl/0.0.1536.816@0.0.1536.816" timestamp="1662920988322" />
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom" timestamp="1663267692549">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1662887472425" />
-    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1662887472425">
+    <state width="1493" height="208" key="GridCell.Tab.0.bottom/0.0.1536.816@0.0.1536.816" timestamp="1663267692549" />
+    <state width="1493" height="208" key="GridCell.Tab.0.center" timestamp="1663267692549">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1662887472425" />
-    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1662887472425">
+    <state width="1493" height="208" key="GridCell.Tab.0.center/0.0.1536.816@0.0.1536.816" timestamp="1663267692549" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left" timestamp="1663267692549">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1662887472425" />
+    <state width="1493" height="208" key="GridCell.Tab.0.left/0.0.1536.816@0.0.1536.816" timestamp="1663267692549" />
+    <state width="1493" height="208" key="GridCell.Tab.0.right" timestamp="1663267692549">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state width="1493" height="208" key="GridCell.Tab.0.right/0.0.1536.816@0.0.1536.816" timestamp="1663267692549" />
     <state x="249" y="0" key="SettingsEditor" timestamp="1662887275184">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
     <state x="249" y="0" key="SettingsEditor/0.0.1536.816@0.0.1536.816" timestamp="1662887275184" />
-    <state x="722" y="141" key="Vcs.Push.Dialog.v2" timestamp="1662865923340">
+    <state x="722" y="141" key="Vcs.Push.Dialog.v2" timestamp="1662921574717">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="722" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1662865923340" />
-    <state x="848" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1662879183616">
+    <state x="722" y="141" key="Vcs.Push.Dialog.v2/0.0.1536.816@0.0.1536.816" timestamp="1662921574717" />
+    <state x="848" y="232" key="com.intellij.ide.util.TipDialog" timestamp="1663262208610">
       <screen x="0" y="0" width="1536" height="816" />
     </state>
-    <state x="848" y="232" key="com.intellij.ide.util.TipDialog/0.0.1536.816@0.0.1536.816" timestamp="1662879183616" />
+    <state x="848" y="232" key="com.intellij.ide.util.TipDialog/0.0.1536.816@0.0.1536.816" timestamp="1663262208610" />
+    <state x="578" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1663048132705">
+      <screen x="0" y="0" width="1536" height="816" />
+    </state>
+    <state x="578" y="325" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.816@0.0.1536.816" timestamp="1663048132705" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/rmit/rmitsb/RmitsbApplication.java</url>
-          <line>8</line>
+          <line>11</line>
           <properties class="rmit.rmitsb.RmitsbApplication" method="main">
             <option name="EMULATED" value="true" />
           </properties>

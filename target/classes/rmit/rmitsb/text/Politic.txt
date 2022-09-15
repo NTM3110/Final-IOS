@@ -1,0 +1,5 @@
+Zing,Politic,https://zingnews.vn/sitemap/cate/thoi-su.xml
+Vnexpress,Politic,https://vnexpress.net/rss/thoi-su.rss
+TuoiTre,Politic,https://tuoitre.vn/rss/thoi-su.rss
+Thanhnien,Politic,https://thanhnien.vn/rss/thoi-su/chinh-tri.rss
+Nhandan,Politic,https://en.nhandan.vn/rss/politics.html

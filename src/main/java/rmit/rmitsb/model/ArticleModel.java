@@ -24,6 +24,12 @@ public class ArticleModel {
     @Column
     private String content;
 
+    @Column
+    private String time;
+
+    @Column
+    private String author;
+
     public ArticleModel(){
 
     }
@@ -52,14 +58,26 @@ public class ArticleModel {
         this.directUrl = directUrl;
     }
 
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public String getAuthor() {
+        return author;
+    }
+
     public String getImgSrc(){return imgSrc;}
 
     public String getTitle() { return title; }
 
     public String getCategory() {return category;}
 
-    public void setCategory(String category) {this.category = category;}
+    public String getTime() {
+        return time;
+    }
 
+    public void setCategory(String category) {this.category = category;}
+    public void setTime(String time){this.time = time;}
     public String getContent() {return content;}
 
     public void setContent(String content) {this.content = content;}

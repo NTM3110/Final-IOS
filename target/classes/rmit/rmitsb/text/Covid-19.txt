@@ -1,0 +1,4 @@
+Vnexpress,Health,https://vnexpress.net/rss/suc-khoe.rss
+TuoiTre,Health,https://tuoitre.vn/rss/suc-khoe.rss
+Thanhnien,Health,https://thanhnien.vn/rss/suc-khoe.rss
+Nhandan,Health,https://en.nhandan.vn/rss/health.html
